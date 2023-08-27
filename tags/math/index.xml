@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>math on Earth Online DevBlog</title>
+    <link>https://4defc.github.io/tags/math/</link>
+    <description>Recent content in math on Earth Online DevBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright. All right reserved</copyright>
+    <lastBuildDate>Sun, 27 Aug 2023 14:29:23 +0800</lastBuildDate><atom:link href="https://4defc.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>因式分解 - 基础篇</title>
+      <link>https://4defc.github.io/post/frac/</link>
+      <pubDate>Sun, 27 Aug 2023 14:29:23 +0800</pubDate>
+      
+      <guid>https://4defc.github.io/post/frac/</guid>
+      <description>部分内容参考了这篇文章
+1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
+比较基础，就不过多介绍了
+2.解方程法 不难看出，对于如下形式的多项式
+$$ P(x) = \sum_{i=0}^n a_ix^i = a_0+a_1x^1+a_2x^2+&amp;hellip;+a_nx^n (a_0 \ne 0) $$
+如果有一个数 a，满足
+$$ P(a) = 0 $$
+则该多项式必定可以被拆分为
+$$ \begin{align*} P(x) = aP&amp;rsquo;(x) \ P&amp;rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i \end{align*} $$
+重复此步骤，直到无法分解为止
+判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理： 对于
+$$ P(x) = a_0+a_1x^1+a_2x^2+&amp;hellip;+a_nx^n (a_0 \ne 0) $$
+如果存在一个素数M，满足如下条件
+能够整除 (就是除出来不会有小数) $ a_0 .. a_{n-1} $
+不能整除 $ a_n $
+$M^2$不能整除 $a_0$
+则这个多项式在实数范围内不可分解
+证明： 我们不妨先假设定理是错误的
+则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即</description>
+    </item>
+    
+  </channel>
+</rss>

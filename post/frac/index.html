@@ -1,0 +1,455 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #f8f5d7"
+  lang="zh-cn"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>因式分解 - 基础篇 - Earth Online DevBlog</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="部分内容参考了这篇文章
+1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
+比较基础，就不过多介绍了
+2.解方程法 不难看出，对于如下形式的多项式
+$$ P(x) = \sum_{i=0}^n a_ix^i = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
+如果有一个数 a，满足
+$$ P(a) = 0 $$
+则该多项式必定可以被拆分为
+$$ \begin{align*} P(x) = aP&rsquo;(x) \ P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i \end{align*} $$
+重复此步骤，直到无法分解为止
+判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理： 对于
+$$ P(x) = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
+如果存在一个素数M，满足如下条件
+能够整除 (就是除出来不会有小数) $ a_0 .. a_{n-1} $
+不能整除 $ a_n $
+$M^2$不能整除 $a_0$
+则这个多项式在实数范围内不可分解
+证明： 我们不妨先假设定理是错误的
+则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即" />
+  <meta name="author" content="Yoong" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://4defc.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="https://4defc.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+     
+  <link rel="preload" as="image" href="https://4defc.github.io/theme.svg" />
+
+  
+  
+  
+  <link rel="preload" as="image" href="https://yang-l1ng.github.io/ava.png" />
+  
+  
+
+  
+  <link rel="preload" as="image" href="https://4defc.github.io/github.svg" />
+  
+  
+
+  
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () =>
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+          ],
+          
+          throwOnError : false
+        })
+    );
+</script>
+  
+  
+  
+
+  
+  <link rel="icon" href="https://4defc.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://4defc.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.117.0">
+
+  
+  
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="因式分解 - 基础篇">
+<meta itemprop="description" content="部分内容参考了这篇文章
+1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
+比较基础，就不过多介绍了
+2.解方程法 不难看出，对于如下形式的多项式
+$$ P(x) = \sum_{i=0}^n a_ix^i = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
+如果有一个数 a，满足
+$$ P(a) = 0 $$
+则该多项式必定可以被拆分为
+$$ \begin{align*} P(x) = aP&rsquo;(x) \ P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i \end{align*} $$
+重复此步骤，直到无法分解为止
+判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理： 对于
+$$ P(x) = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
+如果存在一个素数M，满足如下条件
+能够整除 (就是除出来不会有小数) $ a_0 .. a_{n-1} $
+不能整除 $ a_n $
+$M^2$不能整除 $a_0$
+则这个多项式在实数范围内不可分解
+证明： 我们不妨先假设定理是错误的
+则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即"><meta itemprop="datePublished" content="2023-08-27T14:29:23+08:00" />
+<meta itemprop="dateModified" content="2023-08-27T14:29:23+08:00" />
+<meta itemprop="wordCount" content="127">
+<meta itemprop="keywords" content="math," />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="因式分解 - 基础篇"/>
+<meta name="twitter:description" content="部分内容参考了这篇文章
+1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
+比较基础，就不过多介绍了
+2.解方程法 不难看出，对于如下形式的多项式
+$$ P(x) = \sum_{i=0}^n a_ix^i = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
+如果有一个数 a，满足
+$$ P(a) = 0 $$
+则该多项式必定可以被拆分为
+$$ \begin{align*} P(x) = aP&rsquo;(x) \ P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i \end{align*} $$
+重复此步骤，直到无法分解为止
+判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理： 对于
+$$ P(x) = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
+如果存在一个素数M，满足如下条件
+能够整除 (就是除出来不会有小数) $ a_0 .. a_{n-1} $
+不能整除 $ a_n $
+$M^2$不能整除 $a_0$
+则这个多项式在实数范围内不可分解
+证明： 我们不妨先假设定理是错误的
+则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即"/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://4defc.github.io/"
+      >Earth Online DevBlog</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#f8f5d7'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Axotot1"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">因式分解 - 基础篇</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Aug 27, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><blockquote>
+<p>部分内容参考了<a href="https://zhuanlan.zhihu.com/p/169519012">这篇文章</a></p>
+</blockquote>
+<h2 id="1-提取公因式法">1. 提取公因式法</h2>
+<p>对于不含常数项的一元多项式，总能提出其公共因子</p>
+<p>比较基础，就不过多介绍了</p>
+<h2 id="2解方程法">2.解方程法</h2>
+<p>不难看出，对于如下形式的多项式</p>
+<p>$$
+P(x) = \sum_{i=0}^n a_ix^i = a_0+a_1x^1+a_2x^2+&hellip;+a_nx^n (a_0 \ne 0)
+$$</p>
+<p>如果有一个数 a，满足</p>
+<p>$$
+P(a) = 0
+$$</p>
+<p>则该多项式必定可以被拆分为</p>
+<p>$$
+\begin{align*}
+P(x) = aP&rsquo;(x) \
+P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i
+\end{align*}
+$$</p>
+<p>重复此步骤，直到无法分解为止</p>
+<h2 id="判别是否可以继续分解的方法">判别是否可以继续分解的方法</h2>
+<h3 id="艾森斯坦eisenstein判别法">艾森斯坦(Eisenstein)判别法</h3>
+<h4 id="定理">定理：</h4>
+<p>对于</p>
+<p>$$
+P(x) = a_0+a_1x^1+a_2x^2+&hellip;+a_nx^n (a_0 \ne 0)
+$$</p>
+<p>如果存在一个素数M，满足如下条件</p>
+<ol>
+<li>
+<p>能够整除 (就是除出来不会有小数) $    a_0 .. a_{n-1}   $</p>
+</li>
+<li>
+<p>不能整除 $ a_n $</p>
+</li>
+<li>
+<p>$M^2$不能整除 $a_0$</p>
+</li>
+</ol>
+<p>则这个多项式在实数范围内不可分解</p>
+<h4 id="证明">证明：</h4>
+<p>我们不妨先假设定理是错误的</p>
+<p>则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即</p>
+<p>$$ P(x) = Q(x)\times T(x) $$
+$$ Q(x) = b_0+b_1x+b^2x^2+&hellip;+b_kx^k $$
+$$ T(x) = d_0+d_1x+d^2x^2+&hellip;+d_mx^m $$
+$$ (m, k &lt; n, m+k=n) $$</p>
+<p>显然，有</p>
+<p>$$
+b_0d_0 = a_0, b_kd_m = a_n
+$$</p>
+<p>根据条件2，$b_k$和$d_m$均不能被M整除</p>
+<ol start="4">
+<li>$M^2$不能整除$a_0$，可以得出$b_0$和$d_0$至少有一个不能被M整除</li>
+</ol>
+<p>$$
+a_r = \sum_{0 \le i \le k, 0 \le j \le m}^{i+j=r} b_id_j
+$$</p>
+<p>根据条件1，$a_k$ 可以被M整除，这也就意味着展开式中的所有项都必须能被M整除。其中一定有一项为$b_kd_0$，因为$b_k$不可能被M整除 (条件2)，所以$d_0$一定可以被M整除</p>
+<p>同理可得$b_0$也一定可以被M整除</p>
+<p>这与我们刚才推出的条件4不符合，因此，假设不成立，证毕。</p>
+</section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://4defc.github.io/tags/math"
+      >math</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://4defc.github.io/post/first/"
+      ><span>地球Online v2023.08.24 更新</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="https://4defc.github.io/">Earth Online DevBlog</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

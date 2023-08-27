@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright. All right reserved</copyright>
-    <lastBuildDate>Sun, 27 Aug 2023 12:03:46 +0800</lastBuildDate><atom:link href="https://4defc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Aug 2023 14:29:23 +0800</lastBuildDate><atom:link href="https://4defc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>因式分解 - 基础篇</title>
+      <link>https://4defc.github.io/post/frac/</link>
+      <pubDate>Sun, 27 Aug 2023 14:29:23 +0800</pubDate>
+      
+      <guid>https://4defc.github.io/post/frac/</guid>
+      <description>部分内容参考了这篇文章
+1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
+比较基础，就不过多介绍了
+2.解方程法 不难看出，对于如下形式的多项式
+$$ P(x) = \sum_{i=0}^n a_ix^i = a_0+a_1x^1+a_2x^2+&amp;hellip;+a_nx^n (a_0 \ne 0) $$
+如果有一个数 a，满足
+$$ P(a) = 0 $$
+则该多项式必定可以被拆分为
+$$ \begin{align*} P(x) = aP&amp;rsquo;(x) \ P&amp;rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i \end{align*} $$
+重复此步骤，直到无法分解为止
+判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理： 对于
+$$ P(x) = a_0+a_1x^1+a_2x^2+&amp;hellip;+a_nx^n (a_0 \ne 0) $$
+如果存在一个素数M，满足如下条件
+能够整除 (就是除出来不会有小数) $ a_0 .. a_{n-1} $
+不能整除 $ a_n $
+$M^2$不能整除 $a_0$
+则这个多项式在实数范围内不可分解
+证明： 我们不妨先假设定理是错误的
+则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即</description>
+    </item>
+    
     <item>
       <title>地球Online v2023.08.24 更新</title>
       <link>https://4defc.github.io/post/first/</link>
@@ -23,7 +50,7 @@
 若该区块超过 40% 的区域被标记为 &amp;ldquo;Keter&amp;rdquo;，或者超过 50% 的区域活动着带有 &amp;ldquo;自然的愤怒&amp;rdquo; 状态效果的生物，则该区块会被标记为 &amp;ldquo;Keter&amp;rdquo; 被标记为 &amp;ldquo;Keter&amp;rdquo; 的区块在游戏内被称为 &amp;ldquo;核污染区&amp;rdquo; 新增内容 祸水
 不可饮用 若强行饮用会立刻赋予该生物 &amp;ldquo;辐利IV&amp;rdquo; 状态效果，持续 7 天 具有等级标签 此类水带有 &amp;ldquo;Keter&amp;rdquo; 标签 会更新周围的水资源，使其变为祸水，并且将新的祸水等级-0.5 在游戏中常被称作 &amp;ldquo;核污水&amp;rdquo; 生物群系: 亡洋
 带有 &amp;ldquo;Keter&amp;rdquo; 标签 当 &amp;ldquo;海洋&amp;rdquo; 生物群系的区块被标记为 &amp;ldquo;Keter&amp;rdquo; 时，该区块所属生物群系会被转为 &amp;ldquo;亡洋&amp;rdquo; 成就 : &amp;ldquo;有辐同享&amp;rdquo;
-在玩家所在区块被标记为 &amp;ldquo;Keter&amp;rdquo; 时获得 获得后将有 50% 的概率获得 &amp;ldquo;自然的愤怒III&amp;rdquo; 状态效果 另外有 40% 的概率获得 &amp;ldquo;辐利IV&amp;rdquo; 状态效果 生物类型: &amp;ldquo;辐形&amp;rdquo;</description>
+在玩家所在区块被标记为 &amp;ldquo;Keter&amp;rdquo; 时获得 获得后将有 50% 的概率获得 &amp;ldquo;自然的愤怒III&amp;rdquo; 状态效果 另外有 40% 的概率获得 &amp;ldquo;辐利IV&amp;rdquo; 状态效果 生物类型: &amp;ldquo;辐目&amp;rdquo;</description>
     </item>
     
   </channel>

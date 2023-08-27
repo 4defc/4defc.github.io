@@ -108,9 +108,22 @@
   src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
   integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
   crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"
 ></script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", () =>
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+          ],
+          
+          throwOnError : false
+        })
+    );
+</script>
   
   
   
@@ -283,6 +296,19 @@
   </div>
   
 </div>
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">因式分解 - 基础篇</h2>
+  <time class="text-sm antialiased opacity-60"
+    >Aug 27, 2023</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://4defc.github.io/post/frac/">因式分解 - 基础篇</a>
+</section>
+
 
 
 
