@@ -6,6 +6,25 @@
     <description>Recent content in Posts on Earth Online Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>Copyright. All right reserved</copyright><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright. All right reserved</copyright>
+    <lastBuildDate>Sun, 27 Aug 2023 10:03:46 +0800</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>地球Online v2023.08.24 更新</title>
+      <link>http://example.org/post/first/</link>
+      <pubDate>Sun, 27 Aug 2023 10:03:46 +0800</pubDate>
+      
+      <guid>http://example.org/post/first/</guid>
+      <description>主题: 祸水东引
+更新类型: 剧情更新 / 热更新
+知小礼而无大义，拘小节而无大德，重末节而轻廉耻，畏威而不怀德，强必寇盗，弱而卑伏。
+移除/更新内容 移除: 原版海洋
+将以区块更新的方式，被 &amp;ldquo;亡洋&amp;rdquo; 替代 过程将持续约15年~30年 移除: 海洋系生物
+将被新系列生物替代 过程将持续20年 区块
+若该区块超过 40% 的区域被标记为 &amp;ldquo;Keter&amp;rdquo;，或者超过 50% 的区域活动着带有 &amp;ldquo;自然的愤怒&amp;rdquo; 状态效果的生物，则该区块会被标记为 &amp;ldquo;Keter&amp;rdquo; 被标记为 &amp;ldquo;Keter&amp;rdquo; 的区块在游戏内被称为 &amp;ldquo;核污染区&amp;rdquo; 新增内容 祸水
+不可饮用 若强行饮用会立刻赋予该生物 &amp;ldquo;辐利IV&amp;rdquo; 状态效果，持续 7 天 具有等级标签 此类水带有 &amp;ldquo;Keter&amp;rdquo; 标签 会更新周围的水资源，使其变为祸水，并且将新的祸水等级-0.5 在游戏中常被称作 &amp;ldquo;核污水&amp;rdquo; 生物群系: 亡洋
+带有 &amp;ldquo;Keter&amp;rdquo; 标签 当 &amp;ldquo;海洋&amp;rdquo; 生物群系的区块被标记为 &amp;ldquo;Keter&amp;rdquo; 时，该区块所属生物群系会被转为 &amp;ldquo;亡洋&amp;rdquo; 成就 : &amp;ldquo;有辐同享&amp;rdquo;
+在玩家所在区块被标记为 &amp;ldquo;Keter&amp;rdquo; 时获得 获得后将有 50% 的概率获得 &amp;ldquo;自然的愤怒III&amp;rdquo; 状态效果 另外有 40% 的概率获得 &amp;ldquo;辐利IV&amp;rdquo; 状态效果 生物类型: &amp;ldquo;辐形&amp;rdquo;</description>
+    </item>
+    
   </channel>
 </rss>
