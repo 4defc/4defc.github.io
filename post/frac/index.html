@@ -55,25 +55,20 @@
   
   
   
-  <meta name="description" content="部分内容参考了这篇文章
-1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
+  <meta name="description" content="1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
 比较基础，就不过多介绍了
 2.解方程法 不难看出，对于如下形式的多项式
 $$ P(x) = \sum_{i=0}^n a_ix^i = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
 如果有一个数 a，满足
 $$ P(a) = 0 $$
 则该多项式必定可以被拆分为
-$$ \begin{align*} P(x) = aP&rsquo;(x) \ P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i \end{align*} $$
+$$ P(x) = a\times P&rsquo;(x) $$ $$ P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i $$
+$ P&rsquo;(x) $ 可以使用短除法求出
 重复此步骤，直到无法分解为止
-判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理： 对于
-$$ P(x) = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
-如果存在一个素数M，满足如下条件
-能够整除 (就是除出来不会有小数) $ a_0 .. a_{n-1} $
-不能整除 $ a_n $
-$M^2$不能整除 $a_0$
-则这个多项式在实数范围内不可分解
-证明： 我们不妨先假设定理是错误的
-则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即" />
+多项式有理根定理 如果多项式$P(x)$有一个有理根(设为$\frac{f}{t}$，其中r与s互质)，则一定有t是$a_n$的因数，f是$a_0$的因数。
+再说明白点：例如$x^3&#43;3x^2-2 = 0$，设它的有理数根为 $x = \frac{a}{b}$，那么 a 只能取 ${-1,1}$ 这两个1的因子， b只能取 ${-2, -1, 1, 2}$ 这四个-2的因子。 因此只需要试一下满足条件的组合就行了
+证明 有理根的求法（含证明） - Sonder的文章 - 知乎
+其实我也看不懂，溜了溜了 判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理：1 对于" />
   <meta name="author" content="Yoong" />
   
 
@@ -164,50 +159,40 @@ $M^2$不能整除 $a_0$
   
   
   <meta itemprop="name" content="因式分解 - 基础篇">
-<meta itemprop="description" content="部分内容参考了这篇文章
-1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
+<meta itemprop="description" content="1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
 比较基础，就不过多介绍了
 2.解方程法 不难看出，对于如下形式的多项式
 $$ P(x) = \sum_{i=0}^n a_ix^i = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
 如果有一个数 a，满足
 $$ P(a) = 0 $$
 则该多项式必定可以被拆分为
-$$ \begin{align*} P(x) = aP&rsquo;(x) \ P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i \end{align*} $$
+$$ P(x) = a\times P&rsquo;(x) $$ $$ P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i $$
+$ P&rsquo;(x) $ 可以使用短除法求出
 重复此步骤，直到无法分解为止
-判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理： 对于
-$$ P(x) = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
-如果存在一个素数M，满足如下条件
-能够整除 (就是除出来不会有小数) $ a_0 .. a_{n-1} $
-不能整除 $ a_n $
-$M^2$不能整除 $a_0$
-则这个多项式在实数范围内不可分解
-证明： 我们不妨先假设定理是错误的
-则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即"><meta itemprop="datePublished" content="2023-08-27T14:29:23+08:00" />
+多项式有理根定理 如果多项式$P(x)$有一个有理根(设为$\frac{f}{t}$，其中r与s互质)，则一定有t是$a_n$的因数，f是$a_0$的因数。
+再说明白点：例如$x^3&#43;3x^2-2 = 0$，设它的有理数根为 $x = \frac{a}{b}$，那么 a 只能取 ${-1,1}$ 这两个1的因子， b只能取 ${-2, -1, 1, 2}$ 这四个-2的因子。 因此只需要试一下满足条件的组合就行了
+证明 有理根的求法（含证明） - Sonder的文章 - 知乎
+其实我也看不懂，溜了溜了 判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理：1 对于"><meta itemprop="datePublished" content="2023-08-27T14:29:23+08:00" />
 <meta itemprop="dateModified" content="2023-08-27T14:29:23+08:00" />
-<meta itemprop="wordCount" content="127">
+<meta itemprop="wordCount" content="162">
 <meta itemprop="keywords" content="math," />
   
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="因式分解 - 基础篇"/>
-<meta name="twitter:description" content="部分内容参考了这篇文章
-1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
+<meta name="twitter:description" content="1. 提取公因式法 对于不含常数项的一元多项式，总能提出其公共因子
 比较基础，就不过多介绍了
 2.解方程法 不难看出，对于如下形式的多项式
 $$ P(x) = \sum_{i=0}^n a_ix^i = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
 如果有一个数 a，满足
 $$ P(a) = 0 $$
 则该多项式必定可以被拆分为
-$$ \begin{align*} P(x) = aP&rsquo;(x) \ P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i \end{align*} $$
+$$ P(x) = a\times P&rsquo;(x) $$ $$ P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i $$
+$ P&rsquo;(x) $ 可以使用短除法求出
 重复此步骤，直到无法分解为止
-判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理： 对于
-$$ P(x) = a_0&#43;a_1x^1&#43;a_2x^2&#43;&hellip;&#43;a_nx^n (a_0 \ne 0) $$
-如果存在一个素数M，满足如下条件
-能够整除 (就是除出来不会有小数) $ a_0 .. a_{n-1} $
-不能整除 $ a_n $
-$M^2$不能整除 $a_0$
-则这个多项式在实数范围内不可分解
-证明： 我们不妨先假设定理是错误的
-则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即"/>
+多项式有理根定理 如果多项式$P(x)$有一个有理根(设为$\frac{f}{t}$，其中r与s互质)，则一定有t是$a_n$的因数，f是$a_0$的因数。
+再说明白点：例如$x^3&#43;3x^2-2 = 0$，设它的有理数根为 $x = \frac{a}{b}$，那么 a 只能取 ${-1,1}$ 这两个1的因子， b只能取 ${-2, -1, 1, 2}$ 这四个-2的因子。 因此只需要试一下满足条件的组合就行了
+证明 有理根的求法（含证明） - Sonder的文章 - 知乎
+其实我也看不懂，溜了溜了 判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理：1 对于"/>
 
   
   
@@ -326,10 +311,7 @@ $M^2$不能整除 $a_0$
     
   </header>
 
-  <section><blockquote>
-<p>部分内容参考了<a href="https://zhuanlan.zhihu.com/p/169519012">这篇文章</a></p>
-</blockquote>
-<h2 id="1-提取公因式法">1. 提取公因式法</h2>
+  <section><h2 id="1-提取公因式法">1. 提取公因式法</h2>
 <p>对于不含常数项的一元多项式，总能提出其公共因子</p>
 <p>比较基础，就不过多介绍了</p>
 <h2 id="2解方程法">2.解方程法</h2>
@@ -343,15 +325,26 @@ P(a) = 0
 $$</p>
 <p>则该多项式必定可以被拆分为</p>
 <p>$$
-\begin{align*}
-P(x) = aP&rsquo;(x) \
+P(x) = a\times P&rsquo;(x)
+$$
+$$
 P&rsquo;(x) = \sum_{i=0}^{n-1} a_ix^i
-\end{align*}
 $$</p>
+<blockquote>
+<p>$ P&rsquo;(x) $ 可以使用短除法求出</p>
+</blockquote>
 <p>重复此步骤，直到无法分解为止</p>
+<h3 id="多项式有理根定理">多项式有理根定理</h3>
+<p>如果多项式$P(x)$有一个有理根(设为$\frac{f}{t}$，其中r与s互质)，则一定有t是$a_n$的因数，f是$a_0$的因数。<br>
+再说明白点：例如$x^3+3x^2-2 = 0$，设它的有理数根为 $x = \frac{a}{b}$，那么 a 只能取 ${-1,1}$ 这两个1的因子，
+b只能取 ${-2, -1, 1, 2}$ 这四个-2的因子。
+因此只需要试一下满足条件的组合就行了</p>
+<h4 id="证明">证明</h4>
+<p><a href="https://zhuanlan.zhihu.com/p/487001560">有理根的求法（含证明） - Sonder的文章 - 知乎</a><br>
+<span style="background-color:black;color:black;"> <em>其实我也看不懂，溜了溜了</em> </span></p>
 <h2 id="判别是否可以继续分解的方法">判别是否可以继续分解的方法</h2>
 <h3 id="艾森斯坦eisenstein判别法">艾森斯坦(Eisenstein)判别法</h3>
-<h4 id="定理">定理：</h4>
+<h4 id="定理1">定理：<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h4>
 <p>对于</p>
 <p>$$
 P(x) = a_0+a_1x^1+a_2x^2+&hellip;+a_nx^n (a_0 \ne 0)
@@ -369,7 +362,7 @@ $$</p>
 </li>
 </ol>
 <p>则这个多项式在实数范围内不可分解</p>
-<h4 id="证明">证明：</h4>
+<h4 id="证明2">证明：<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h4>
 <p>我们不妨先假设定理是错误的</p>
 <p>则对于 $ P(x) $ 我们一定有办法将其分解为两个整式的乘积，即</p>
 <p>$$ P(x) = Q(x)\times T(x) $$
@@ -390,6 +383,17 @@ $$</p>
 <p>根据条件1，$a_k$ 可以被M整除，这也就意味着展开式中的所有项都必须能被M整除。其中一定有一项为$b_kd_0$，因为$b_k$不可能被M整除 (条件2)，所以$d_0$一定可以被M整除</p>
 <p>同理可得$b_0$也一定可以被M整除</p>
 <p>这与我们刚才推出的条件4不符合，因此，假设不成立，证毕。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://zhuanlan.zhihu.com/p/169519012">多项式因式分解的方法</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.zhihu.com/question/385128450/answer/2778688893">如何证明艾森斯坦判别法？ - welman的回答 - 知乎</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 </section>
 
   
