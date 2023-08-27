@@ -166,7 +166,7 @@
 带有 &ldquo;Keter&rdquo; 标签 当 &ldquo;海洋&rdquo; 生物群系的区块被标记为 &ldquo;Keter&rdquo; 时，该区块所属生物群系会被转为 &ldquo;亡洋&rdquo; 成就 : &ldquo;有辐同享&rdquo;
 在玩家所在区块被标记为 &ldquo;Keter&rdquo; 时获得 获得后将有 50% 的概率获得 &ldquo;自然的愤怒III&rdquo; 状态效果 另外有 40% 的概率获得 &ldquo;辐利IV&rdquo; 状态效果 生物类型: &ldquo;辐目&rdquo;"><meta itemprop="datePublished" content="2023-08-27T12:03:46+08:00" />
 <meta itemprop="dateModified" content="2023-08-27T12:03:46+08:00" />
-<meta itemprop="wordCount" content="330">
+<meta itemprop="wordCount" content="331">
 <meta itemprop="keywords" content="kidding," />
   
   <meta name="twitter:card" content="summary"/>
@@ -390,7 +390,7 @@
 <p>&ldquo;辐物&rdquo; 系列生物自带状态效果</p>
 </li>
 <li>
-<p>此效果会导致非 &ldquo;辐物&rdquo; 生物每 3 天降低 $$(lv*5)$$ <strong>HP 上限</strong> ，直到HP上限降低到0</p>
+<p>此效果会导致非 &ldquo;辐物&rdquo; 生物每 3 天降低 $lv*5$ <strong>HP 上限</strong> ，直到HP上限降低到0</p>
 </li>
 <li>
 <p>HP上限降低至健康水平的 25% 时，可能会获得各种负面效果，如:</p>
@@ -404,7 +404,7 @@
 <li>
 <p>若效果等级 &gt; 4，则会尝试破坏&amp;变更该生物的遗传物质</p>
 <ul>
-<li>更新时间间隔为 $$\left \lfloor \frac{360}{lv}  \right \rfloor sec$$</li>
+<li>更新时间间隔为 $\left \lfloor \frac{360}{lv}  \right \rfloor $ 秒一次</li>
 </ul>
 </li>
 <li>
@@ -433,7 +433,7 @@
 <li>
 <p>状态效果 : &ldquo;辐利&rdquo;</p>
 <ul>
-<li>此效果每过 30 秒以 $$ 0.1*lv $$ 的概率 尝试触发一次 &ldquo;转化&rdquo; 事件</li>
+<li>此效果每过 30 秒以 $ (10*lv) $% 的概率 尝试触发一次 &ldquo;转化&rdquo; 事件</li>
 </ul>
 </li>
 <li>
