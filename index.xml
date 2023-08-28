@@ -26,7 +26,7 @@
 如果实在需要替换的话，可以通过手机获取 &amp;ldquo;root&amp;rdquo; 权限后使用插件更改
 3. 删除朋友圈 也没有好的办法，只能一条一条删
 或者通过UI自动化等方式，自动删除
-4. 修改微信ID 获取WXID 登录电脑微信 打开 &amp;ldquo;最近文件&amp;rdquo; 面板
+4. 重设微信ID 获取WXID 登录电脑微信 打开 &amp;ldquo;最近文件&amp;rdquo; 面板
 鼠标右击一个文件，点击 &amp;ldquo;在文件夹中&amp;rdquo; 显示
 在地址栏中，找到一串 以 &amp;ldquo;wxid_&amp;rdquo; 开头的代码，记住它，这便是你的WXID WXID 就是你的默认微信ID
 将你的微信ID改回WXID就可以了
