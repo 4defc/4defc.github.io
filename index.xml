@@ -7,7 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright. All right reserved</copyright>
-    <lastBuildDate>Mon, 28 Aug 2023 13:07:46 +0800</lastBuildDate><atom:link href="https://4defc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 15:40:29 +0800</lastBuildDate><atom:link href="https://4defc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>伪装注销微信账号</title>
+      <link>https://4defc.github.io/post/pretendclosedwxacc/</link>
+      <pubDate>Mon, 28 Aug 2023 15:40:29 +0800</pubDate>
+      
+      <guid>https://4defc.github.io/post/pretendclosedwxacc/</guid>
+      <description>藏好自己，做好清理
+1. 换头像 微信头像绝对不允许出现二维码1
+11.6 头像含有包括但不限于微信个人账号二维码、群二维码、公众号二维码、小程序码、视频号二维码、第三方识别码等引流信息，诱导用户添加微信账号、进入群聊、关注公众号、视频号、识别小程序、下载或跳转到第三方 APP、网页等的。
+一旦被检测到，头像会被立刻重置为初始头像
+这里给一个二维码样例:
+被检测到后就会替换成这个:
+并且会收到这样的提示:
+当然也可以通过换成官方图标等其他方式来重置头像，但是最快被检测到的还是黑白二维码
+2. 清理 &amp;ldquo;性别/地区&amp;rdquo; 信息 这个就没什么好办法了
+如果实在需要替换的话，可以通过手机获取 &amp;ldquo;root&amp;rdquo; 权限后使用插件更改
+3. 删除朋友圈 也没有好的办法，只能一条一条删
+或者通过UI自动化等方式，自动删除
+4. 修改微信ID 获取WXID 登录电脑微信 打开 &amp;ldquo;最近文件&amp;rdquo; 面板
+鼠标右击一个文件，点击 &amp;ldquo;在文件夹中&amp;rdquo; 显示
+在地址栏中，找到一串 以 &amp;ldquo;wxid_&amp;rdquo; 开头的代码，记住它，这便是你的WXID WXID 就是你的默认微信ID
+将你的微信ID改回WXID就可以了
+并且 WXID 还会在微信传输数据时作为标记使用
+5. 修改微信昵称 目前 (2023-08-28 16:36:51) 为止还有效的 &amp;ldquo;空白字符&amp;rdquo; 只有 &amp;ldquo;朝鲜文填充符&amp;rdquo; (U+3164) 这一个字符，可以在这里复制: 【ㅤ】
+之后在微信改名时粘贴即可。
+6. 清理其他个人信息 1. 解绑电话号码 (非必要) 让其他微信号绑定同一个手机号，本微信号就会被强制解绑
+注意，半年后还是会有手机号验证 (不是绑定) ，但是验证1~2次就不用验证了
+2. 清理其他个人信息 如个性签名等
+EX: 效果展示 微信个人账号使用规范&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
+    </item>
+    
     <item>
       <title>MultiSet 题解</title>
       <link>https://4defc.github.io/post/cf1534d/</link>
