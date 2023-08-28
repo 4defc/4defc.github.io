@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright. All right reserved</copyright>
-    <lastBuildDate>Sun, 27 Aug 2023 14:29:23 +0800</lastBuildDate><atom:link href="https://4defc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 13:07:46 +0800</lastBuildDate><atom:link href="https://4defc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MultiSet 题解</title>
+      <link>https://4defc.github.io/post/cf1534d/</link>
+      <pubDate>Mon, 28 Aug 2023 13:07:46 +0800</pubDate>
+      
+      <guid>https://4defc.github.io/post/cf1534d/</guid>
+      <description>题面： Multiset - 洛谷
+给定一个数组$a_n$ ( $1\le a_i \le n$ ) 你需要保证数组始终是升序的 ( 其实就是可重集 )
+有$q$次询问
+每次询问给出一个数$x$
+若$x \lt 0$，则删除$a[-x]$。如果此时$n \lt -x$，则忽略本次操作
+否则，向数组中插入$x$
+最后，输出数组中任意一个数，若数组为空则输出0
+输入： 第一行两个数$n, q$
+第二行$n$个数，是数组$a[1..n]$的元素
+第三行$q$个数，每个数都是一个询问
+样例 1 输入 5 5 1 2 3 4 5 -1 -1 -1 -1 -1 输出 0 解释 本样例中，数组的变化为 $[1,2,3,4,5]=&amp;gt;[2,3,4,5]=&amp;gt;[3,4,5]=&amp;gt;&amp;hellip;=&amp;gt;[]$
+样例 2 输入 5 5 1 2 3 4 5 -5 -1 -3 -1 -10 输出 3 最后一个询问：因为不存在，所以忽略
+思路 令 $b_i$ 表示第 $i$ 个数出现了几次</description>
+    </item>
+    
     <item>
       <title>因式分解 - 基础篇</title>
       <link>https://4defc.github.io/post/frac/</link>
