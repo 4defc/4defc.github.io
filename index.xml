@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright. All right reserved</copyright>
-    <lastBuildDate>Mon, 28 Aug 2023 15:40:29 +0800</lastBuildDate><atom:link href="https://4defc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Aug 2023 12:22:46 +0800</lastBuildDate><atom:link href="https://4defc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>地球Online v2023.08.24 更新</title>
+      <link>https://4defc.github.io/post/first/</link>
+      <pubDate>Tue, 29 Aug 2023 12:22:46 +0800</pubDate>
+      
+      <guid>https://4defc.github.io/post/first/</guid>
+      <description>主题: 祸水东引
+更新类型: 剧情更新 / 热更新
+新增剧情 &amp;ldquo;祸水东引&amp;rdquo;
+知小礼而无大义，拘小节而无大德，重末节而轻廉耻，畏威而不怀德，强必寇盗，弱而卑伏。 背景: 日本政府决定于公元2023年8月24日排放核污水，持续30年。 日本福岛地区大量 &amp;ldquo;祸水&amp;rdquo; 被排放至海洋 日本方面回应，首相家中出现 &amp;ldquo;辐目&amp;rdquo; 系谣言。 &amp;ldquo;或许，真正的噩梦才刚刚开始……&amp;rdquo; 主要任务: 活下去 在你的城市尚未被核污染前收集足够物资 找到避难所 支线任务 医疗: 研究抵抗 &amp;ldquo;辐射病&amp;rdquo; 的方法 日常: 清理 &amp;ldquo;辐目&amp;rdquo; 赓续: 尽可能记录，保存人类现有资料 &amp;ldquo;责任使然&amp;rdquo;
+故谒也死，馀祭也立。* 触发条件: 获得 &amp;ldquo;自然的愤怒&amp;rdquo; ，且HP上限降低至健康水平的 30% 时触发 背景: 躲躲藏藏了这么久，还是没能躲过这该死的核辐射…… &amp;ldquo;我应该再做些什么……&amp;rdquo; 特殊事件: &amp;ldquo;没必要了&amp;rdquo;: 取消 &amp;ldquo;祸水东引&amp;rdquo; 所有未完成主线任务 &amp;ldquo;挺住！&amp;rdquo;: 提升 &amp;ldquo;祸水东引&amp;rdquo; 支线任务为主线任务 新支线任务: 为自己写好墓志铭 整理避难所，为下一位遇难者准备说明书 &amp;ldquo;结束了? &amp;quot;
+丢掉幻想，准备斗争 * 触发条件: 地图中全部区块均被标记为 &amp;ldquo;Keter&amp;rdquo; &amp;ldquo;那光明，终究是幻影……&amp;rdquo; 主线任务: 往地下挖，越深越好 支线任务: 找到逃离地球的方法 &amp;ldquo;无人生还&amp;rdquo;
+坏结局1 触发条件: 地球上所有玩家均已死亡 &amp;ldquo;能毁灭人类的，只有人类自己。&amp;rdquo; &amp;ldquo;彼岸&amp;rdquo;</description>
+    </item>
+    
     <item>
       <title>伪装注销微信账号</title>
       <link>https://4defc.github.io/post/pretendclosedwxacc/</link>
@@ -80,21 +95,6 @@ $ P&amp;rsquo;(x) $ 可以使用短除法求出
 再说明白点：例如$x^3+3x^2-2 = 0$，设它的有理数根为 $x = \frac{a}{b}$，那么 a 只能取 ${-1,1}$ 这两个1的因子， b只能取 ${-2, -1, 1, 2}$ 这四个-2的因子。 因此只需要试一下满足条件的组合就行了
 证明 有理根的求法（含证明） - Sonder的文章 - 知乎
 其实我也看不懂，溜了溜了 判别是否可以继续分解的方法 艾森斯坦(Eisenstein)判别法 定理：1 对于</description>
-    </item>
-    
-    <item>
-      <title>地球Online v2023.08.24 更新</title>
-      <link>https://4defc.github.io/post/first/</link>
-      <pubDate>Sun, 27 Aug 2023 12:03:46 +0800</pubDate>
-      
-      <guid>https://4defc.github.io/post/first/</guid>
-      <description>主题: 祸水东引
-更新类型: 剧情更新 / 热更新
-新增剧情 &amp;ldquo;祸水东引&amp;rdquo;
-知小礼而无大义，拘小节而无大德，重末节而轻廉耻，畏威而不怀德，强必寇盗，弱而卑伏。 背景: 日本政府决定于公元2023年8月24日排放核污水，持续30年。 日本福岛地区大量 &amp;ldquo;祸水&amp;rdquo; 被排放至海洋 有趣的是，日本官方宣称本国没有出现过 &amp;ldquo;辐目&amp;rdquo;..? &amp;ldquo;或许，真正的噩梦才刚刚开始……&amp;rdquo; 主要任务: 活下去 在你的城市尚未被核污染前收集足够物资 找到避难所 支线任务 医疗: 研究抵抗 &amp;ldquo;辐射病&amp;rdquo; 的方法 日常: 清理 &amp;ldquo;辐目&amp;rdquo; 赓续: 尽可能记录，保存人类现有资料 &amp;ldquo;责任使然&amp;rdquo;
-故谒也死，馀祭也立。* 触发条件: 获得 &amp;ldquo;自然的愤怒&amp;rdquo; ，且HP上限降低至健康水平的 30% 时触发 背景: 躲躲藏藏了这么久，还是没能躲过这该死的核辐射…… &amp;ldquo;我应该再做些什么……&amp;rdquo; 特殊事件: &amp;ldquo;没必要了&amp;rdquo;: 取消 &amp;ldquo;祸水东引&amp;rdquo; 所有未完成主线任务 &amp;ldquo;挺住！&amp;rdquo;: 提升 &amp;ldquo;祸水东引&amp;rdquo; 支线任务为主线任务 新支线任务: 为自己写好墓志铭 整理避难所，为下一位遇难者准备说明书 &amp;ldquo;结束了? &amp;quot;
-丢掉幻想，准备斗争 * 触发条件: 地图中全部区块均被标记为 &amp;ldquo;Keter&amp;rdquo; &amp;ldquo;那光明，终究是幻影……&amp;rdquo; 主线任务: 往地下挖，越深越好 支线任务: 找到逃离地球的方法 &amp;ldquo;无人生还&amp;rdquo;
-坏结局1 触发条件: 地球上所有玩家均已死亡 &amp;ldquo;能毁灭人类的，只有人类自己。&amp;rdquo; &amp;ldquo;彼岸&amp;rdquo;</description>
     </item>
     
   </channel>
