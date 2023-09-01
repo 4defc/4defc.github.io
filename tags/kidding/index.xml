@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright. All right reserved</copyright>
-    <lastBuildDate>Tue, 29 Aug 2023 12:22:46 +0800</lastBuildDate><atom:link href="https://4defc.github.io/tags/kidding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Sep 2023 17:27:42 +0800</lastBuildDate><atom:link href="https://4defc.github.io/tags/kidding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>另一种评论系统</title>
+      <link>https://4defc.github.io/post/alter_comment/</link>
+      <pubDate>Fri, 01 Sep 2023 17:27:42 +0800</pubDate>
+      
+      <guid>https://4defc.github.io/post/alter_comment/</guid>
+      <description>注意：本文纯属瞎扯，请勿当真。如有雷同，纯属巧合
+背景 在互联网日益发达的今天，人们都有表达自己想法的需要。 然而，一些具有强烈主观性、攻击性的言论常常出现在 &amp;ldquo;评论区&amp;rdquo; ，扎人眼球。
+传统的方法是设置一个庞大的 &amp;ldquo;屏蔽词&amp;rdquo; 库，屏蔽那些不和谐的声音。 然而，这并没有取得好效果，反而造成了网络用语 &amp;ldquo;畸形&amp;rdquo;。
+如今，LLM (大语言模型) 已经接近成熟，作者希望能借助这项新技术，重构评论系统，解决上述问题。
+技术介绍 NLP (自然语言处理) 一类问题的总称 在本文中限定为 &amp;ldquo;识别、标记、归类用户输入内容&amp;rdquo; 这一特定问题。 LLM (大语言模型) 用于处理 NLP 问题 例：ChatGPT / 文心一言 / PaLM 等 工作流程 获取用户提交的评论信息 递交给 LLM 进行内容分析 对结果进行分类处理，并给予用户反馈 分类建议 对 作者 的评价 建议: 使用 LLM 对评论内容进行概括&amp;amp;处理后私信发送 若同时有对 视频内容 评价的，则将评论按照标签拆开处理 对 视频内容 的评价 建议: 使用 LLM 对评论内容进行标签化后分类放置在评论区 含有 攻击性 的评论 建议: 通过 LLM 猜测&amp;amp;提取出其核心诉求后再处理，并反馈给用户 对 评论 的回复 建议: 使用 LLM 提取出核心思想后放置在回复栏 对于违法内容 及时劝阻，并上传到云端记录 若情况严重(见下方例)，立刻联系潜在被害人 (若有)，并将资料移交至当地警方 典型的严重情况: 未经当事人允许，发布他人个人隐私信息，包括但不限于身份证、个人住址、家庭状况 未经当事人允许，发布他人详细的个人生活信息 其他违反《刑法》等中华人民共和国法律的行为 特殊功能 删除&amp;amp;禁止特定标签的内容 为管理员提供接口，能够便捷地删除&amp;amp;禁止特定标签的内容 例: 在 &amp;ldquo;南京大屠杀纪念日&amp;rdquo; 视频下评论禁止 与日本帝国主义相关的争议性内容 屏蔽特定标签的内容 为用户提供接口，便捷地屏蔽特定标签内容 技术细节 待补充……</description>
+    </item>
+    
     <item>
       <title>地球Online v2023.08.24 更新</title>
       <link>https://4defc.github.io/post/first/</link>
