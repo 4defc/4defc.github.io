@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright. All right reserved</copyright>
-    <lastBuildDate>Fri, 01 Sep 2023 17:27:42 +0800</lastBuildDate><atom:link href="https://4defc.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Sep 2023 16:16:17 +0800</lastBuildDate><atom:link href="https://4defc.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>各科预习知识汇总 - part I</title>
+      <link>https://4defc.github.io/post/ssyxh1_index/</link>
+      <pubDate>Sun, 03 Sep 2023 16:16:17 +0800</pubDate>
+      
+      <guid>https://4defc.github.io/post/ssyxh1_index/</guid>
+      <description>本文仅作为一个不完整的索引使用，提供关键词以便上网搜索知识点，具体内容请见ssyx2023入学资料
+内容不保证完全有效，且不一定对你有用！
+use it at your own risk.
+数学 约定&amp;amp;前置知识 符号函数定义：
+基于上述函数，不等式便可以有如下表达
+$ x^2-2x+1 \gt 0 \Leftrightarrow sgn(x^2-2x+1) = 1\\ sin(x+\pi) &amp;lt; 0 \Leftrightarrow sgn(sin(x+\pi)) = -1 \\ x^4 \gt 2 \Leftrightarrow x^4-2 \gt 0 \Leftrightarrow sgn(x^4-2)=1 $
+知识点 因式分解
+基本：提公因式
+基本：公式逆用
+基本：十字相乘
+拓展：长除法/解方程法 建议看因式分解 - 基础篇 一元二次方程、二次函数和不等式
+初中知识：省略
+拓展：高次不等式的解法 &amp;ldquo;穿针引线&amp;rdquo; ( $T(x) \gt 0 \Leftrightarrow sgn(T(x)) = 1$ )
+分解因式 (求出$T(x)=0$ 时的n个根，从大到小排的第 $i$ 个根 (记为 $A_i$ ) 重复次数记录为 $B_i$ )</description>
+    </item>
+    
     <item>
       <title>另一种评论系统</title>
       <link>https://4defc.github.io/post/alter_comment/</link>
